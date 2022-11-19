@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <div class="head">
+                <h2 id="show_11" onclick="show_1()">web designer</h2>
+                <h2 id="show_22" onclick="show_2()">web developer</h2>
+                <h2 id="show_33" onclick="show_3()">Logo designer</h2>
+                <h2 id="show_44" onclick="show_4()">freelancer</h2>
+            </div>
+            
+            <div class="sub">
+            <div class="subhead sub_1" id="hide_1">
+                <h3>web designer</h3>
+                <h6>web designer the programming web designer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cupiditate cumque facere. Placeat, doloribus consectetur?</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere atque repellat sint excepturi, sit numquam incidunt quidem exercitationem, doloremque, eius vero nulla reiciendis iste quasi voluptatum animi recusandae iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cum error veritatis ipsum sint, unde quis aliquid repellendus? Quam totam aut ratione eos perspiciatis itaque accusamus error cumque? Voluptas, optio.
+                </p> 
+            </div>
+            <div class="subhead sub_2" id="hide_2"> 
+                <h3>web developer</h3>
+                <h6>web developer the new programming web developerLorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cupiditate cumque facere. Placeat, doloribus consectetur?</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere atque repellat sint excepturi, sit dolor sit amet consectetur, adipisicing elit. Eveniet cum error veritatis ipsum sint, unde quis aliquid repellendus? Quam totam aut ratione eos perspiciatis itaque accusamus error cumque? Voluptas, optio.
+                    
+                </p> 
+            </div>
+            <div class="subhead sub_3" id="hide_3"> 
+                <h3>Logo designer</h3>
+                <h6>Logo designer pro logo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cupiditate cumque facere. Placeat, doloribus consectetur?</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere atque repellat sint excepturi, sit numquam optio.</p> 
+            </div>
+            <div class="subhead sub_4" id="hide_4"> 
+                <h3>freelancer</h3>
+                <h6>freelancer Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cupiditate cumque facere. Placeat, doloribus consectetur?</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere atque repellat sint excepturi, sit numquam incidunt quidem exercitationem, doloremque, eius vero nulla reiciendis iste quasi voluptatum animi recusandae iusto! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cum error veritatis ipsum sint, unde quis   ratione eos perspiciatis itaque accusamus error cumque? Voluptas, optio.</p> 
+            </div>
+        </div>
+        </div>
+
+    </section>
+    
+</body>
+<script>
+    function show_1(){
+        let show_11 = document.getElementById("show_11");
+        let hide_1 = document.getElementById("hide_1");
+        if(hide_1.style.display != "block"){
+            hide_1.style.display = "block"
+            show_11.style.backgroundColor = "rgb(111, 163, 209)"
+            show_11.style.color = "#fff"
+            show_22.style.color = "#000"
+            show_33.style.color = "#000"
+            show_44.style.color = "#000"
+            
+
+            show_22.style.backgroundColor = "rgb(143, 178, 207)"
+            show_33.style.backgroundColor = "rgb(143, 178, 207)"
+            show_44.style.backgroundColor = "rgb(143, 178, 207)"
+            hide_2.style.display = "none"
+            hide_3.style.display = "none"
+            hide_4.style.display = "none"
+           
+        }  
+    }
+    function show_2(){
+        let show_22 = document.getElementById("show_22");
+        let hide_2 = document.getElementById("hide_2");
+        if(hide_2.style.display != "block"){
+            hide_2.style.display = "block"
+            show_22.style.color = "#fff" 
+            show_11.style.color = "#000"
+            show_33.style.color = "#000"
+            show_44.style.color = "#000"
+            show_22.style.backgroundColor = "rgb(111, 163, 209)"
+            show_33.style.backgroundColor = "rgb(143, 178, 207)"
+            show_44.style.backgroundColor = "rgb(143, 178, 207)"
+            show_11.style.backgroundColor = "rgb(143, 178, 207)"
+            
+            hide_1.style.display = "none" 
+            hide_3.style.display = "none"
+            hide_4.style.display = "none"
+        } 
+    }
+    function show_3(){
+        let show_33 = document.getElementById("show_33");
+        let hide_3 = document.getElementById("hide_3");
+        if(hide_3.style.display != "block"){
+            hide_3.style.display = "block"
+            show_33.style.color = "#fff"
+            show_11.style.color = "#000"
+            show_22.style.color = "#000" 
+            show_44.style.color = "#000"
+            show_33.style.backgroundColor = "rgb(111, 163, 209)"
+            show_44.style.backgroundColor = "rgb(143, 178, 207)"
+            show_11.style.backgroundColor = "rgb(143, 178, 207)"
+            show_22.style.backgroundColor = "rgb(143, 178, 207)"
+            hide_1.style.display = "none"
+            hide_2.style.display = "none" 
+            hide_4.style.display = "none"
+        } 
+    }
+    function show_4(){
+        let show_44 = document.getElementById("show_44");
+        let hide_4 = document.getElementById("hide_4");
+        if(hide_4.style.display != "block"){
+            hide_4.style.display = "block"
+            show_44.style.color = "#fff"
+            show_11.style.color = "#000"
+            show_22.style.color = "#000"
+            show_33.style.color = "#000"
+            show_44.style.backgroundColor = "rgb(111, 163, 209)"
+            show_11.style.backgroundColor = "rgb(143, 178, 207)"
+            show_22.style.backgroundColor = "rgb(143, 178, 207)"
+            show_33.style.backgroundColor = "rgb(143, 178, 207)"
+            hide_1.style.display = "none"
+            hide_2.style.display = "none"
+            hide_3.style.display = "none"
+        }  
+    }
+
+</script>
+</html>
